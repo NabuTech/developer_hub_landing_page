@@ -1,0 +1,39 @@
+:root {
+    --primary-color: #007Bff;
+    --secondary-color: #28A745;
+    --accent-color: #FFA500;
+    --background-color: #F8F9FA;
+  
+    --header-font: 'Roboto', Arial, sans-serif;
+    --body-font: 'Merriweather', Georgia, serif;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color);
+  }
+  
+  #hero {
+    background-color: var(--primary-color);
+    height: 100vh; 
+  }
+  
+  #hero h1,
+  #hero p {
+    color: var(--accent-color);
+    font-family: var(--header-font);
+  }
+
+  #hero p{
+    color: var(--background-color);
+    font-family: var(--body-font);
+  }
+
+  .carousel-inner {
+    width: 100%;
+    height: 100%; 
+    padding: 0;
+    margin: 0;
+  }
+  
