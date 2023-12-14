@@ -1,48 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Software Developer Hub</title>
-</head>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <style>
+    :root {
+      --primary-color: #007bff; /* Main color for links, buttons, etc. */
+      --secondary-color: #6c757d; /* Secondary color for text, borders, etc. */
+      --background-color: #f8f9fa; /* Background color for sections */
+      --font-family: 'Arial', sans-serif; /* Default font family */
+    }
 
+    body {
+      font-family: var(--font-family);
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Hero Section */
+    #hero-section {
+      background: url('./boitumelo-_8gR561QtEA-unsplash.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    #hero-section .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #hero-section h1,
+    #hero-section p {
+      flex: 1;
+      max-width: 50%;
+    }
+
+    #hero-section img {
+      flex: 1;
+      max-width: 50%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+   /* User Story Section */
+   #user-story-section {
+      background-color: var(--background-color);
+      padding: 80px 0;
+    }
+
+    #user-story-section h2 {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    #user-story-section .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #user-story-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #user-story-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #user-story-section li {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+       /* Features Section */
+       #features-section {
+      background: var(--primary-color);
+      padding: 80px 0;
+      color: var(--background-color);
+    }
+
+    #features-section h2 {
+      text-align: center;
+      margin-bottom: 50px;
+      
+    }
+
+    #features-section .row {
+      justify-content: space-around;
+    }
+
+    #features-section .col-md-4 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    #features-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #features-section h4 {
+      margin-top: 20px;
+    }
+
+    #features-section p {
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
 <body>
 
-  <section id="hero">
-    <div class="container-fluid h-100">
-      <div class="row h-100">
-        <div class="col-lg-6 d-flex align-items-center">
-          <div>
-            <h1>Software Developer Hub</h1>
-            <p>Elevate your code: Connect, Collaborate, Code </p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div id="myCarousel" class="carousel slide h-100" data-ride="carousel">
-            <div class="carousel-inner h-100">
-              <div class="carousel-item active h-100">
-                <img class="d-block w-100 h-100" src="john-barkiple-l090uFWoPaI-unsplash.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item h-100">
-                <img class="d-block w-100 h-100" src="cowomen-3ALW9V3jNkc-unsplash.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item h-100">
-                <img class="d-block w-100 h-100" src="kevin-ku-w7ZyuGYNpRQ-unsplash.jpg" alt="Third slide">
-              </div>
-            </div>
-          </div>
-        </div>
+<!-- Hero Section -->
+<section id="hero-section">
+  <div class="container">
+    <div>
+      <h1 class="display-4">Software Developer Hub</h1>
+      <p class="lead">Elevate your code: Connect, Collaborate, Code</p>
+    </div>
+  </div>
+</section>
+
+<!-- User Story Section -->
+<section id="user-story-section">
+  <div class="container">
+    <h2>User Stories</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="cowomen-3ALW9V3jNkc-unsplash.jpg" alt="User Story Image" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li>As a user, I want to sign up or sign in to my account</li>
+          <li>As a user, I want my profile to show my skills, expertise, and preferred languages</li>
+          <li>As a user, I can showcase my projects</li>
+          <li>As a user, I can promote where to find my projects</li>
+          <li>As a user, I want to connect with other developers for collaboration</li>
+          <li>As a user, I can find users/skills to collaborate on my project</li>
+          <li>As a user, I can find projects from other developers to collaborate on</li>
+          <li>As a user, I want to build a network of developer contacts</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- Features Section -->
+<section id="features-section">
+  <div class="container">
+    <h2>Features</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="john-barkiple-l090uFWoPaI-unsplash.jpg" alt="Feature 1 Image" class="img-fluid">
+        <h4>Profile Management</h4>
+        <p>Create and manage your developer profile with ease. Showcase your skills, expertise, and preferred programming languages to let others know about your strengths.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="kevin-ku-w7ZyuGYNpRQ-unsplash.jpg" alt="Feature 2 Image" class="img-fluid">
+        <h4>Project Showcase</h4>
+        <p>Showcase your coding projects in a visually appealing manner. Provide details about your projects, share code repositories, and highlight your achievements.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="cowomen-3ALW9V3jNkc-unsplash.jpg" alt="Feature 3 Image" class="img-fluid">
+        <h4>Collaboration Hub</h4>
+        <p>Connect with other developers for collaborative projects. Find skilled individuals or projects that align with your interests. Build a network of like-minded developers to enhance your coding journey.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
